@@ -31,6 +31,28 @@ Metadata for the full music catalog.
 
 ---
 
+## 🗂️ Project Structure
+
+```
+.
+├── generate_listening_logs.py
+├── generate_songs_metadata.py
+├── analysis.py
+├── README.md
+└── output/
+    ├── user_favorite_genres/
+    ├── avg_listen_time_per_song/
+    ├── top_songs_this_week/
+    ├── happy_recommendations/
+    ├── genre_loyalty_scores/
+    ├── night_owl_users/
+    └── enriched_logs/
+```
+
+---
+
+---
+
 ## 🧠 Analysis Tasks & Output Samples
 
 All results are saved inside the `output/` folder with subdirectories per task.
@@ -176,22 +198,4 @@ df.coalesce(1).write.mode("overwrite").csv(...)
 
 ---
 
-## 🗂️ Project Structure
 
-```
-.
-├── generate_listening_logs.py
-├── generate_songs_metadata.py
-├── analysis.py
-├── README.md
-└── output/
-    ├── user_favorite_genres/
-    ├── avg_listen_time_per_song/
-    ├── top_songs_this_week/
-    ├── happy_recommendations/
-    ├── genre_loyalty_scores/
-    ├── night_owl_users/
-    └── enriched_logs/
-```
-
----
